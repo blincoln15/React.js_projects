@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// Filename - App.js
+// It contains the Form, its Structure
+// and Basic Form Functionalities
+
+import "./App.css";
+import { React, useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [contact, setContact] = useState("");
+    const [gender, setGender] = useState("male");
+
+
+
+    return (
+        <div className="App">
+            <h1>Form in React</h1>
+            
+        </div>
+    );
 }
 
 export default App;
